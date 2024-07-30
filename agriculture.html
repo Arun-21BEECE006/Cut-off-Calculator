@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpg" href="images/agrifavicon.png">
+    <title>Agriculture</title>
+    <style>
+      body {
+        background-image: url(images/natural-grass-close-up.jpg);
+        background-size:cover;
+        filter: blur(0.5px);
+        background-repeat: no-repeat;
+        -webkit-filter: blur(0.5px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 90vh;
+        margin: 0;
+      }
+
+      .heading {
+      font-size: 6vw;
+      text-align: center;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      background-image: url(images/black.png);
+      background-size: cover;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    @media screen and (max-width: 768px) {
+      .heading {
+        font-size: 10vw;
+      }
+    }
+
+    .box {
+      width: 250px;
+      padding: 5vw;
+      border: 2px solid transparent;
+      text-align: center;
+      border-radius: 30px;
+      border: 2px solid rgb(216, 210, 210);
+      border-style: dotted;
+      filter: brightness(20px);
+    }
+
+    @media screen and (max-width: 768px){
+      .box{
+        padding: 12vw;
+      }      
+    }
+
+      .box input[type="button"] {
+        width: 210px;
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid transparent;
+        border-radius: 15px;
+        font-family: "Times New Roman", Times, serif;
+        text-align: center;
+        margin-bottom: 15px;
+        cursor:pointer;
+      }
+
+      #pure {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 25px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <br><br><br>
+    <div class="heading">AGRICULTURE CUT-OFF CALCULATE</div>
+    <br><br><br>
+    <div class="box">
+      <input type="button" value="PURE SCIENCE" onclick="window.location.href='agripurescience.html'">
+      <input type="button" value="COMPUTER SCIENCE" onclick="window.location.href='agricomputer.html'">
+      <input type="button" value="BIOLOGY" onclick="window.location.href='agribiology.html'">
+    </div>
+  </body>
+</html>

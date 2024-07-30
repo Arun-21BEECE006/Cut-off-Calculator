@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpg" href="images/Science.png">
+    <title>Agriculture Pure-Science</title>
+    <style>
+      body {
+        background-image: url(images/agripurescience.png);
+        background-size:cover;
+        filter: blur(0.5px);
+        background-repeat: no-repeat;
+        -webkit-filter: blur(0.5px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 90vh;
+        margin: 0;
+      }
+
+      .heading {
+      font-size: 6vw;
+      text-align: center;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      background-image: url(images/black.png);
+      background-size: cover;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    @media screen and (max-width: 768px) {
+      .heading {
+        font-size: 10vw;
+      }
+    }
+
+    .box {
+      width: 250px;
+      padding: 5vw;
+      border: 2px solid transparent;
+      text-align: center;
+      border-radius: 30px;
+      border: 2px solid black;
+      border-style: dotted;
+      filter: brightness(20px);
+    }
+
+    @media screen and (max-width: 768px){
+      .box{
+        padding: 12vw;
+      }      
+    }
+
+      .box input[type="number"] {
+        width: 210px;
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid transparent;
+        border-radius: 15px;
+        font-family: "Times New Roman", Times, serif;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      .box input[type="button"] {
+        width: 100px;
+        padding: 9px;
+        font-size: 15px;
+        font-family: "Times New Roman", Times, serif;
+        border: 2px solid white;
+        border-radius: 12px;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+      }
+
+      #agripurescience {
+        /* margin-bottom: 20px; */
+        margin-top: 20px;
+        text-align: center;
+        font-size: 25px;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <br><br><br>
+    <div class="heading">PURE-SCIENCE CUT-OFF CALCULATE</div>
+    <br><br><br>
+    <div class="box">
+      <input type="number" id="physics" placeholder="Enter Your Physics Mark" />
+      <input type="number" id="chemistry" placeholder="Enter Your Chemistry Mark"/>
+      <input type="number" id="botany" placeholder="Enter Your Botany Mark" />
+      <input type="number" id="zology" placeholder="Enter Your Zology Mark" />
+      <input type="button" value="SUBMIT" onclick="agripurescience()" />
+      <div id="agripurescience"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
